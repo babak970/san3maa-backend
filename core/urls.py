@@ -21,5 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('users.urls')),  # all /api/v1/... go to users.urls
     path('api/v1/', include('arenas.urls')),  # 👈 add this line
+    path("api/v1/", include("bookings.urls")),
+
 ]
 

@@ -25,3 +25,4 @@ class ArenaSerializer(serializers.ModelSerializer):
             'is_active',
             'courts',
         ]
+        read_only_fields = ['id', 'owner', 'courts']
